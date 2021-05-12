@@ -2,6 +2,11 @@ $('#todosfilmes').ready(function () {
     requisicao()
 })
 
+
+$('.btn-primary').click(function(){
+    window.location.href='../cadastro/cadastro.html';
+ })
+
 $('.filmes').click(function () {
 
     $('#myModal').modal('show')
