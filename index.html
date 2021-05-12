@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css-reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    
+    <title>Document</title>
+</head>
+<body onload="requisicao()" class="body">
+  
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+        <div class="container-fluid">
+
+          <img src="./img/logo.png" class="img" alt="">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+           
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contato</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li>
+
+            </ul>
+
+            <form class="d-flex">
+
+                <!--input de procurar caso precise usar no js-->
+              <input class="form-control me-2" type="search" placeholder="Encontre seu Filme" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+        <div id="texto-chamada" class="texto-chamada">
+          <h1>Assista a filmes e séries</h1>
+          <h6>Assine nosso canal de streaming e tenha acesso a mais de 1.000 títulos populares <h3>por apenas R$ 9,90 por mês</h3></h6>
+          <button type="button" class="btn btn-primary">Assine já!</button>
+        </div> 
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/tela.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/tela1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/tela3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+     
+      <section id="todosfilmes" class="container">
+
+          <div class="row">
+
+          <div id="filmesexterna" class="col">
+              <div id="filmes0" class="filmes" data-indice="0"></div>
+              <div id="filmes1" class="filmes" data-indice="1"></div>
+              <div id="filmes2" class="filmes" data-indice="2"></div>
+          </div>
+
+          <div id="filmesexterna" class="col"> 
+              <div id="filmes3" class="filmes" data-indice="3"></div>
+              <div id="filmes4" class="filmes" data-indice="4"></div>
+              <div id="filmes5" class="filmes" data-indice="5"></div>
+          </div>
+
+          <div id="filmesexterna" class="col">
+              <div id="filmes6" class="filmes" data-indice="6"></div>
+              <div id="filmes7" class="filmes" data-indice="7"></div>
+              <div id="filmes8" class="filmes" data-indice="8"></div>
+          </div>
+
+          <div id="filmesexterna" class="col">
+              <div id="filmes9" class="filmes" data-indice="9"></div>
+              <div id="filmes10" class="filmes" data-indice="10"></div>
+              <div id="filmes11" class="filmes" data-indice="11"></div>
+          </div>
+
+        </div><!--row-->
+      </section>
+   
+   
+
+
+    <div class="container" id="container-modal">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="modal fade" id="myModal"><!--a tela total por trás do modal-->
+                  <div class="modal-dialog">
+                      <div class="modal-content" id="modalContent">
+                          
+                          <div class="modal-header"> <!--espaço acima-->
+                              <h3>Título: <span class="nome"></span></h3>
+                          </div>
+
+                          <div class="modal-body"> 
+                                <img class="foto" src="" alt="" />
+                                <div class="modal-text">
+
+                                  <p>Ano : <span class="ano"></span></p>
+                                  <p>Data de Lançamento : <span class="lancamento"></span></p>
+                                  <p>Duração : <span class="duracao"></span></p>
+                                  <p>Gênero : <span class="genero"></span></p>
+                                  <p>Diretor : <span class="diretor"></span></p>
+                                  <p>Metacritic : <span class="nota"></span></p>  
+                                    
+                                </div><!--modal-text-->                      
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                          
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="rodape">
+    <div class="container-icone">
+      <div class="icone1"></div>
+      <div class="icone2"></div>
+      <div class="icone3"></div>
+    </div>
+
+    <div class="container-texto">
+    <p><img src="./img/original.png" alt=""  > todos os direitos reservados - projeto final 02 resilia t5 </p>
+    </div><!--container-text-->
+
+  </footer>
+   
+
+    <script src="./bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
