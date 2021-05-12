@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    background-color: rgb(73, 73, 73);
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    padding: 0%;
+}
+.container-fluid{
+    background-color: rgb(49, 49, 49);
+    height: 90px;
+    line-height: 0;
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+    color: rgb(230, 230, 230);
+    font-family: monospace;
+    font-size: 19px;
+    margin-left: 60px;       
+    
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a:hover{
+    color: rgb(255, 255, 255);
+}
+.form-control.me-2{
+    font-family: monospace;
+    
+}
+.btn.btn-outline-success{
+    background-color: rgba(32, 32, 32, 0.459);
+
+    border: none;
+    color: rgb(148, 148, 148);
+    
+}
+.btn.btn-outline-success:hover{
+    color: whitesmoke;
+    background-color: #23b5b5;
+}
+.carousel.slide{
+    margin: 20px auto;
+    width: 100%;
+    height: 600px;
+    width: 90%;
+    background-size: contain;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btn.btn-primary{
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-family: monospace;
+    font-size: 18px;
+    color: blanchedalmond;
+    background-color: rgb(105, 153, 165)
+}
+.btn.btn-primary:hover{
+    background-color: #23b5b5;
+}
+.texto-chamada {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(66, 82, 87, 0.4);
+    color: blanchedalmond;
+    background-color: transparent 0.2;
+}
+.texto-chamada > .assinar :hover{
+    width: 122px;
+}
+section .col{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.imagem{
+    border-radius: 3%;
+    box-shadow: 10px 10px 10px rgb(88, 88, 88) ;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.imagem:hover{
+    transform: scale(1.1);
+}
+.btn.btn-outline-success :hover{
+    background-color: darkcyan;
+}
+#myModal{
+    background-color: rgba(85, 85, 85, 0.507);
+    
+}
+.modal-header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #299797;
+}
+.modal-header h3{
+    width: 100%;
+    text-align: center;
+}
+.modal-body{
+    margin: 0 auto;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+}
+.modal-body img{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.modal-text {
+    padding: 0 8%;
+    color: rgb(49, 49, 49);
+}
+.modal-text p{
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    color: whitesmoke;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.modal-footer{
+    background-color:rgb(77, 77, 77) ;
+}
+.modal-footer > button{
+    margin: 0 auto;
+    width: 20%;
+    background-color: rgb(93, 91, 95);
+    border: none;
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: 22px;
+}
+.rodape{
+    width: 100%;
+    margin-top: 30px;
+    height: 80px;
+    background-color: rgb(49, 49, 49);
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+
+}
+.container-texto {
+    padding: 2% 0 0 0;
+}
