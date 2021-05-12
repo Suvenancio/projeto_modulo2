@@ -1,10 +1,8 @@
-$('#btn').click(function(){
+$('#btnbusca').click(function(){
    
     buscaFilme(busca)
 
 })
-
-
 
 function buscaFilme(){
 
@@ -28,7 +26,7 @@ function buscaFilme(){
 
                     for(let i = 0; i< filmes.length;i++){
                         
-                        $(`#filmes${i}`).html(`<img src = ${filmes[i].Poster}>`)
+                        $(`#filme${i}`).html(`<img src = ${filmes[i].Poster}>`)
                             id.push(filmes[i].imdbID)
                         
                     }
@@ -56,31 +54,29 @@ $('.filmes').click(function () {
 
           
         $('#myModal').modal('show')
+
+        const indice = $(this).data('indice')
            
         let arr = id;
-        for(let i=0; i<arr.length;i++){
 
-            var abc = arr[i]
-            
-        } 
+        let infoFilmes = arr[indice]
 
-        criarObjeto(abc)
+        criarObjeto(infoFilmes)
 
 })
 
 
 
-function criarObjeto(abc){
+function criarObjeto(infoFilmes){
 
-    console.log(abc)
     $.ajax({
 
-        'url': `http://www.omdbapi.com/?i=${abc}&apikey=7ebfd47e `,
+        'url': `http://www.omdbapi.com/?i=${infoFilmes}&apikey=7ebfd47e `,
 
 
         'success': function(results)
         {   
-            const filmes = new Filme(results)
+            const filmes = new Filme2(results)
             filmes.mostrar()
         }
      
@@ -88,7 +84,7 @@ function criarObjeto(abc){
 }
 
 
-class Filme {
+class Filme2 {
 
     constructor(results) {
 
