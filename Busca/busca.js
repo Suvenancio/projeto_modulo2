@@ -1,13 +1,15 @@
 $('#btnbusca').click(function(){
+
+    let busca = $('#busca').val()
    
     buscaFilme(busca)
 
 })
 
-function buscaFilme(){
+function buscaFilme(busca){
 
 
-    let busca = $('#busca').val()
+    
     let url = "http://www.omdbapi.com/?apikey=f5e93ab6&s="
 
 
@@ -46,9 +48,8 @@ function buscaFilme(){
             }      
         })    
 }
+
 let id = [];
-
-
 
 $('.filmes').click(function () {
 
