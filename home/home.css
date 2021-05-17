@@ -30,11 +30,33 @@
     font-family: monospace;
     
 }
+.buscaaprimorada{
+    margin-right: 20px;
+}
+.buscar{
+    width: 220px;
+    background-color: rgba(19, 19, 19, 0.459);
+    height: 40px;
+    border: none;
+    border-radius: 6px;  
+    transition: 0.8s;
+}
+.buscar:hover{
+    background-color: #23b5b5;
+}
+.buscar a{
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+    transition: 0.3s;
+}
+.buscar a:hover{
+    color: whitesmoke;
+}
 .btn.btn-outline-success{
-    background-color: rgba(32, 32, 32, 0.459);
-
+    background-color: rgba(12, 9, 9, 0.459);
     border: none;
     color: rgb(148, 148, 148);
+    
     
 }
 .btn.btn-outline-success:hover{

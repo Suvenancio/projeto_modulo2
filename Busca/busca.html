@@ -2,32 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="resiliaflix.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./busca.css">
+
+   <link rel="stylesheet" href="../bootstrap-5.0.0-dist/css/bootstrap.min.css">
     <title>ResiliaFlix</title>
 </head>
-<body>
-    <header>
-        <input id="busca" type="text" placeholder="digite o nome do filme">
+<body class="body">
 
-        <button id="btnbusca">BUSCAR</button>
+
+    <header class="menu">
+
+            <a href="../index.html"><img src="../img/logo.png" alt=""></a> 
+            
+            <ul class="navbar">
+            
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../cadastro/cadastro.html">Cadastrar</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../login/login.html">Login</a>
+                </li>
+
+            </ul>
+
+        <div class="botao">
+            <input id="busca" type="text" placeholder="digite o nome do filme">
+            <button id="btnbusca" class="btnbusca">BUSCAR </button>
+        </div>
     </header>
 
-    <main>
+    
         
-        <div class="filmesbusca">
-            <div id="filme0" class="filmes" data-indice="0"></div>
-            <div id="filme1" class="filmes" data-indice="1"></div>
-            <div id="filme2" class="filmes" data-indice="2"></div>
-            <div id="filme3" class="filmes" data-indice="3"></div>
-            <div id="filme4" class="filmes" data-indice="4"></div>
-            <div id="filme5" class="filmes" data-indice="5"></div>
-            <div id="filme6" class="filmes" data-indice="6"></div>
-            <div id="filme7" class="filmes" data-indice="7"></div>
-            <div id="filme8" class="filmes" data-indice="8"></div>
-            <div id="filme9" class="filmes" data-indice="9"></div>
-        </div>
+        <div class="filmesbusca" id="filmesbusca">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="filme0" class="filmes" data-indice="0"></div>
+                        <div id="filme1" class="filmes" data-indice="1"></div>
+                        <div id="filme2" class="filmes" data-indice="2"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div id="filme3" class="filmes" data-indice="3"></div>
+                        <div id="filme4" class="filmes" data-indice="4"></div>
+                        <div id="filme5" class="filmes" data-indice="5"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div id="filme6" class="filmes" data-indice="6"></div>
+                        <div id="filme7" class="filmes" data-indice="7"></div>
+                        <div id="filme8" class="filmes" data-indice="8"></div>
+                    </div>
+
+                </div><!--row-->
+            </div><!--container-->
+
+        </div><!--filmebusca-->
 
 
        
