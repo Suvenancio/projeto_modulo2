@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     padding: 0%;
@@ -66,4 +67,15 @@ button{
     border: none;
     border-radius: 20px;
     color: whitesmoke;
+}
+
+@media screen and (max-width: 620px){
+
+    .titulo{
+        width: 60%;
+    }
+    form{
+        width: 80%;
+        padding-bottom: 5%;
+    }
 }

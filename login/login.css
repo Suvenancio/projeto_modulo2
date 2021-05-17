@@ -82,3 +82,16 @@ body{
 .entrar a:hover{
     color: whitesmoke;
 }
+@media screen and (max-width: 768px){
+    .entrar{
+        margin-bottom:10%
+    }
+}
+@media screen and (max-width: 530px){
+    .col{
+        width: 95%;
+    }
+    .entrar{
+        margin-bottom:20%
+    }
+}
