@@ -107,6 +107,7 @@ section .col{
     box-shadow: 10px 10px 10px rgb(88, 88, 88) ;
     cursor: pointer;
     transition: 0.6s;
+    border: 5px solid white
 }
 .imagem:hover{
     transform: scale(1.1);
@@ -133,10 +134,11 @@ section .col{
     width: 100%;
 }
 .modal-body img{
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    border: 5px solid white
 }
 .modal-text {
     padding: 0 8%;
@@ -151,8 +153,6 @@ section .col{
     text-align: center;
     line-height: 20px;
 }
-
-
 .modal-footer{
     background-color:rgb(77, 77, 77) ;
 }

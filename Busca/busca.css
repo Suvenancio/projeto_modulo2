@@ -1,10 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .body{
     background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menu{
     display: flex;
@@ -55,18 +52,81 @@ ul li{
     width: 200px;
 
 }
-#filmesbusca{
-    
+#todosfilmes{    
     text-align: center;
-    background-color: #616161;
 }
-.container{
-
+.imagem{
+    margin-top: 40px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255) ;
+    cursor: pointer;
+    transition: 0.6s;
+    border: 5px solid white;
+}
+.imagem:hover{
+    transform: scale(1.1);
+}
+#erro{
+    background-color: rgba(32, 32, 32, 0.459);
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin-top:100px;
+}
+.invisivel{
+    display:none;
+}
+.escondida{
+    display:none;
+}
+#myModal{
+    background-color: rgba(85, 85, 85, 0.507);
     
 }
-.col-md-4{
-   
+.modal-header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #299797;
 }
-.filmes{
-    margin-top: 40px;
+.modal-header h3{
+    width: 100%;
+    text-align: center;
 }
+.modal-body{
+    margin: 0 auto;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+}
+.modal-body img{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: 5px solid white
+}
+.modal-text {
+    padding: 0 8%;
+    color: rgb(49, 49, 49);
+}
+.modal-text p{
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    color: whitesmoke;
+    text-align: center;
+    line-height: 20px;
+}
+.modal-footer{
+    background-color:rgb(77, 77, 77) ;
+}
+.modal-footer > button{
+    margin: 0 auto;
+    width: 20%;
+    background-color: rgb(93, 91, 95);
+    border: none;
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+

@@ -62,6 +62,9 @@ body{
     margin: 0 auto;
     text-align: center;
 }
+.mensagem{
+    font-weight: bold;
+}
 .botao-entrar{
     border-radius: 10px;
     border: none;

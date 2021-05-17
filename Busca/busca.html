@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./busca.css">
-
-   <link rel="stylesheet" href="../bootstrap-5.0.0-dist/css/bootstrap.min.css">
-    <title>ResiliaFlix</title>
+    <link rel="stylesheet" href="../css-reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <title>Busca</title>
 </head>
+
 <body class="body">
 
 
     <header class="menu">
 
-            <a href="../index.html"><img src="../img/logo.png" alt=""></a> 
-            
-            <ul class="navbar">
-            
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">home</a>
-                </li>
+        <a href="../index.html"><img src="../img/logo.png" alt=""></a>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../cadastro/cadastro.html">Cadastrar</a>
-                </li>
+        <ul class="navbar">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../login/login.html">Login</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+            </li>
 
-            </ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../cadastro/cadastro.html">Cadastrar</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../login/login.html">Login</a>
+            </li>
+
+        </ul>
 
         <div class="botao">
             <input id="busca" type="text" placeholder="digite o nome do filme">
-            <button id="btnbusca" class="btnbusca">BUSCAR </button>
+            <button id="btnbusca" class="btnbusca">Buscar</button>
         </div>
     </header>
 
-    
-        
-        <div class="filmesbusca" id="filmesbusca">
+    <section id="todosfilmes" class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="filme0" class="filmes invisivel" data-indice="0"></div>
+                <div id="filme1" class="filmes invisivel" data-indice="1"></div>
+                <div id="filme2" class="filmes invisivel" data-indice="2"></div>
+            </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div id="filme0" class="filmes" data-indice="0"></div>
-                        <div id="filme1" class="filmes" data-indice="1"></div>
-                        <div id="filme2" class="filmes" data-indice="2"></div>
-                    </div>
+            <div class="col-md-4">
+                <div id="filme3" class="filmes invisivel" data-indice="3"></div>
+                <div id="filme4" class="filmes invisivel" data-indice="4"></div>
+                <div id="filme5" class="filmes invisivel" data-indice="5"></div>
+            </div>
 
-                    <div class="col-md-4">
-                        <div id="filme3" class="filmes" data-indice="3"></div>
-                        <div id="filme4" class="filmes" data-indice="4"></div>
-                        <div id="filme5" class="filmes" data-indice="5"></div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div id="filme6" class="filmes" data-indice="6"></div>
-                        <div id="filme7" class="filmes" data-indice="7"></div>
-                        <div id="filme8" class="filmes" data-indice="8"></div>
-                    </div>
-
-                </div><!--row-->
-            </div><!--container-->
-
-        </div><!--filmebusca-->
+            <div class="col-md-4">
+                <div id="filme6" class="filmes invisivel" data-indice="6"></div>
+                <div id="filme7" class="filmes invisivel" data-indice="7"></div>
+                <div id="filme8" class="filmes invisivel" data-indice="8"></div>
+            </div>
+            <div id="erro" class="escondida"></div>
+        </div>
+        <!--row-->
+    </section>
+    <!--container-->
 
 
-       
+    <!--filmebusca-->
 
-        <did class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content" id="modalContent">
-                                <div class="modal-header">
-                                    <h3>Título: <span class="nome"></span></h3>
+    <div class="container-modal" id="container-modal">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="modal fade" id="myModal">
+                    <!--a tela total por trás do modal-->
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="modalContent">
+                            <div class="modal-header">
+                                <!--espaço acima-->
+                                <h3>Título: <span class="nome"></span></h3>
+                            </div>
+                            <div class="modal-body">
+                                <img class="foto" src="" alt="" />
+                                <div class="modal-text">
+                                    <p>Ano : <span class="ano"></span></p>
+                                    <p>Data de Lançamento : <span class="lancamento"></span></p>
+                                    <p>Duração : <span class="duracao"></span></p>
+                                    <p>Gênero : <span class="genero"></span></p>
+                                    <p>Diretor : <span class="diretor"></span></p>
+                                    <p>Metacritic : <span class="nota"></span></p>
                                 </div>
-                                <div class="modal-body">
-                                      <img class="foto" src="" alt="" />
-                                      <p>Ano: <span class="ano"></span></p>
-                                      <p>Data de Lançamento: <span class="lancamento"></span></p>
-                                      <p>Duração: <span class="duracao"></span></p>
-                                      <p>Gênero: <span class="genero"></span></p>
-                                      <p>Diretor: <span class="diretor"></span></p>
-                                      <p>Metacritic: <span class="nota"></span></p>                          
-                                </div>
-                                <div class="modal-footer">
-                                    <input class="btn btn-default" data-dismiss="modal" value="Fechar">
-                                </div>
+                                <!--modal-text-->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </did>
-    </main>
+        </div>
+    </div>
 
-    
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
     <script src="./busca.js"></script>
 
 </body>
+
 </html>

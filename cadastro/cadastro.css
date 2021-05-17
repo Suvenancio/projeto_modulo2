@@ -103,6 +103,9 @@ input{
     text-align: center;
     margin-top: 10px;
 }
+.mensagem{
+    font-weight: bold;
+}
 .botao-cadastrar{
     background-color: #249797;
     border: none;

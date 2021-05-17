@@ -1,91 +1,93 @@
-$('#btnbusca').click(function(){
+$('#btnbusca').click(function (event) {
+
+    event.preventDefault()
 
     let busca = $('#busca').val()
-   
+
     buscaFilme(busca)
 
 })
 
-function buscaFilme(busca){
+function buscaFilme(busca) {
 
 
-    
+
     let url = "http://www.omdbapi.com/?apikey=f5e93ab6&s="
 
 
-        
-        $.ajax({
 
-            'url': url+busca ,
-    
-        
-            'success': function(results)
-            {   
-                try{
+    $.ajax({
 
-                    let filmes = results.Search;
+        'url': url + busca,
 
 
-                    for(let i = 0; i< filmes.length;i++){
-                        
-                        $(`#filme${i}`).html(`<img src = ${filmes[i].Poster}>`)
-                            id.push(filmes[i].imdbID)
-                        
-                    }
+        'success': function (results) {
+            try {
+
+                let filmes = results.Search;
 
 
-                    if(results.Response=== "False"){
-                        throw new Error("Sua busca não trouxe nenhum resultado")
-                    }
-              }catch(err){
-                
-                if(results.Response=== "False"){
-                    $('.filmes').html(` <h1>Sua busca não trouxe nenhum resultado</h1>`)
+                for (let i = 0; i < filmes.length; i++) {
+
+                    $('#erro').addClass('escondida')
+                    $(`#filme${i}`).html(`<img class="imagem" id= "imagem" src = ${filmes[i].Poster}>`).removeClass('invisivel')
+                    id.push(filmes[i].imdbID)
+
                 }
-            
-              }
-               
-            }      
-        })    
+
+
+                if (results.Response === "False") {
+                    throw new Error("Sua busca não trouxe nenhum resultado!")
+                }
+            } catch (err) {
+
+                if (results.Response === "False") {
+                    $('.filmes').addClass('invisivel')
+                    $('#erro').html("Sua busca não trouxe nenhum resultado!").removeClass('escondida')
+                }
+
+            }
+
+        }
+    })
 }
 
 let id = [];
 
-$('.filmes').click(function () {
+$('.filmes').click(function (event) {
 
-          
-        $('#myModal').modal('show')
+    event.preventDefault()
 
-        const indice = $(this).data('indice')
-           
-        let arr = id;
+    const indice = $(this).data('indice')
 
-        let infoFilmes = arr[indice]
-
-        criarObjeto(infoFilmes)
+    let arr = id;
+    let infoFilmes = arr[indice]
+    console.log(infoFilmes)
+    criarObjeto(infoFilmes)
 
 })
 
 
 
-function criarObjeto(infoFilmes){
+function criarObjeto(infoFilmes) {
 
     $.ajax({
 
         'url': `http://www.omdbapi.com/?i=${infoFilmes}&apikey=7ebfd47e `,
 
 
-        'success': function(results)
-        {   
-            const filmes = new Filme2(results)
+        'success': function (results) {
+
+            $('#myModal').modal('show')
+            const filmes = new Filme(results)
             filmes.mostrar()
         }
-     
+
     })
 }
 
 
-class Filme2 {
+class Filme {
 
     constructor(results) {
 
@@ -99,16 +101,16 @@ class Filme2 {
         this.nota = results.Metascore;
     }
 
-    mostrar(){
+    mostrar() {
 
         $('.foto').attr("src", this.img)
         $('.nome').text(this.nome)
         $('.ano').text(this.ano)
         $('.lancamento').text(this.lancamento)
-        $('.genero').text(this.genero) 
+        $('.genero').text(this.genero)
         $('.duracao').text(this.duracao)
         $('.diretor').text(this.diretor)
-        $('.nota').text(this.nota)   
+        $('.nota').text(this.nota)
     }
 }
 
