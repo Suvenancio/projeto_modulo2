@@ -140,4 +140,18 @@ ul li{
     }
 }
 
+.container-texto {
+    padding: 2% 0 0 0;
+}
 
+.rodape{
+    width: 100%;
+    margin-top: 497px;
+    height: 80px;
+    background-color: rgb(49, 49, 49);
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+
+}

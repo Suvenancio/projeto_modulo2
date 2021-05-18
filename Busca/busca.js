@@ -97,8 +97,8 @@ class Filme {
         this.lancamento = results.Released;
         this.duracao = results.Runtime;
         this.genero = results.Genre;
-        this.diretor = results.Director;
         this.nota = results.Metascore;
+        this.Plot = results.Plot;
     }
 
     mostrar() {
@@ -109,8 +109,8 @@ class Filme {
         $('.lancamento').text(this.lancamento)
         $('.genero').text(this.genero)
         $('.duracao').text(this.duracao)
-        $('.diretor').text(this.diretor)
         $('.nota').text(this.nota)
+        $('.diretor').text(this.Plot)
     }
 }
 
