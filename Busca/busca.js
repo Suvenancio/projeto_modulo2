@@ -1,8 +1,8 @@
-$('#btnbusca').click(function (event) {
+$('#buscanav').click(function (event) {
 
     event.preventDefault()
 
-    let busca = $('#busca').val()
+    let busca = $('#inputnav').val()
 
     buscaFilme(busca)
 

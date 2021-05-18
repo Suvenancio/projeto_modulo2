@@ -1,41 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .body{
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu{
-    display: flex;
-    height: 80px;
-    background-color: #494949;
-    align-items: center;
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    padding: 0%;
 }
-.menu ul{
-    display: flex;
-    list-style: none;
-    width: 30%;
-    margin-top: 17px;
+.container-fluid{
+    background-color: rgb(49, 49, 49);
+    height: 90px;
+    line-height: 0;
 }
-ul li{
-    display: flex;
-    align-items: center;
-}
-.nav-link.active{
-    color: rgb(207, 207, 207);
-    font-size: 18px;
-}
-.nav-link.active:hover{
-    color: whitesmoke;
-}
-.botao{
-    display: flex;
-    height: 40px;
-    width: 50%;
-    justify-content: flex-end;
-}
-.botao input{
-    display: flex;
-    align-items: center;
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+    color: rgb(230, 230, 230);
+    font-family: monospace;
+    font-size: 19px;
+    margin-left: 60px;       
     
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a:hover{
+    color: rgb(255, 255, 255);
+}
+.form-control.me-2{
+    font-family: monospace;
+    
+}
+.btn.btn-outline-success{
+    background-color: rgba(12, 9, 9, 0.459);
+    border: none;
+    color: rgb(148, 148, 148);
+}
+.btn.btn-outline-success:hover{
+    color: whitesmoke;
+    background-color: #23b5b5;
+}
+.btn.btn-outline-success :hover{
+    background-color: darkcyan;
 }
 .btnbusca{
     border-radius: 6px;
@@ -52,16 +58,27 @@ ul li{
     width: 200px;
 
 }
-#todosfilmes{    
+#todosfilmes{
     text-align: center;
 }
 .imagem{
+    width: 300px;
+    height: 450px;
     margin-top: 40px;
     border-radius: 3%;
     box-shadow: 5px 5px 5px rgb(255, 255, 255) ;
     cursor: pointer;
     transition: 0.6s;
     border: 5px solid white;
+}
+#filmes8{
+    margin-bottom: 150px;
+}
+#filmes7{
+    margin-bottom: 150px;
+}
+#filmes6{
+    margin-bottom: 150px;
 }
 .imagem:hover{
     transform: scale(1.1);
@@ -146,12 +163,12 @@ ul li{
 
 .rodape{
     width: 100%;
-    margin-top: 497px;
+    bottom: 0%;
+    margin-top: 50px;
     height: 80px;
     background-color: rgb(49, 49, 49);
     color: black;
     text-align: center;
     font-family: monospace;
     text-transform: uppercase;
-
 }

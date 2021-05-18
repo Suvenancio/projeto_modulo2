@@ -56,8 +56,6 @@
     background-color: rgba(12, 9, 9, 0.459);
     border: none;
     color: rgb(148, 148, 148);
-    
-    
 }
 .btn.btn-outline-success:hover{
     color: whitesmoke;
@@ -103,6 +101,8 @@ section .col{
     margin-top: 50px;
 }
 .imagem{
+    width: 300px;
+    height: 450px;
     border-radius: 3%;
     box-shadow: 10px 10px 10px rgb(88, 88, 88) ;
     cursor: pointer;
