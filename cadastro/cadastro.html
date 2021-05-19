@@ -10,163 +10,164 @@
 </head>
 
 <body class="body">
-<div class="containerglobal">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container-fluid">
+  <div class="containerglobal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
 
-      <a href="../index.html"><img src="../img/logo.png" class="img" alt=""></a>
+        <a href="../index.html"><img src="../img/logo.png" class="img" alt=""></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
-          <li class="nav-item">
-            <a class="nav-link active" href="../index.html">Home</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" href="../contato/contato.html">Contato</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../contato/contato.html">Contato</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../login/login.html">Login</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../login/login.html">Login</a>
+            </li>
 
-          <li>
-            <a class="nav-link active" aria-current="page" href="../Busca/busca.html">Busca Avançada</a>
-          </li>
-    
-         
-        </ul>
+            <li>
+              <a class="nav-link active" aria-current="page" href="../Busca/busca.html">Busca Avançada</a>
+            </li>
 
-   
+
+          </ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="titulo">
+      <h1>Faça seu cadastro</h1>
+    </div>
+    <!--titulo-->
+
+    <div class="container-form">
+
+      <div class="container-dados">
+
+        <div class="dados">
+
+          <form class="dados-pessoais">
+            <h3>Dados Pessoais</h3>
+            <div class="container">
+
+
+              <div class="row">
+                <div class="col">
+                  <div class="separar">
+
+                    <label for="nome"> Nome <input type="text" name="nome" class="nome" id="nome"></label>
+                    <label for="sobrenome">Sobrenome<input type="text" name="sobrenome" class="sobrenome"
+                        id="sobrenome"></label>
+                    <label for="rg">RG<input type="text" placeholder="XX.XXX.XXX-X" name="rg" class="rg"
+                        id="rg"></label>
+
+                  </div>
+                  <!--separar-->
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+
+              <div class="row">
+                <div class="col">
+                  <div class="separar">
+
+                    <label for="email">E-mail<input type="email" name="email" placeholder="exemplo@email.com"
+                        class="email" id="email"></label>
+                    <label for="senha">Senha<input type="password" name="senha" class="senha" id="senha"></label>
+                    <label for="conf-senha">Confirmar Senha<input type="password" name="conf-senha" class="conf-senha"
+                        id="conf-senha"></label>
+
+                  </div>
+                  <!--separar-->
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+
+
+            </div>
+            <!--container-->
+          </form>
+          <!--dados-pessoais-->
+
+        </div>
+        <!--dados-->
 
       </div>
-    </div>
-  </nav>
+      <!--container-dados-->
 
+      <div class="container-endereco">
 
+        <form class="endereco">
 
-  <div class="titulo">
-    <h1>Faça seu cadastro</h1>
-  </div>
-  <!--titulo-->
+          <h3>Endereço</h3>
 
-  <div class="container-form">
+          <div class="row">
+            <div class="col">
+              <div class="separar2">
 
-    <div class="container-dados">
-
-      <div class="dados">
-
-        <form class="dados-pessoais">
-          <h3>Dados Pessoais</h3>
-          <div class="container">
-
-
-            <div class="row">
-              <div class="col">
-                <div class="separar">
-
-                  <label for="nome"> Nome <input type="text" name="nome" class="nome" id="nome"></label>
-                  <label for="sobrenome">Sobrenome<input type="text" name="sobrenome" class="sobrenome"
-                      id="sobrenome"></label>
-                  <label for="rg">RG<input type="text" placeholder="XX.XXX.XXX-X" name="rg" class="rg" id="rg"></label>
-
-                </div>
-                <!--separar-->
+                <label for="cep" class="cep"> CEP <input type="text" maxlength="8" name="cep" class="cep" id="cep"
+                    placeholder="00000-000"></label>
+                <label for="rua">Rua<input type="text" name="rua" class="rua" id="rua"></label>
+                <label for="numero">Número<input type="text" name="numero" class="numero" id="numero"></label>
               </div>
-              <!--col-->
+              <!--separar-->
             </div>
-            <!--row-->
-
-            <div class="row">
-              <div class="col">
-                <div class="separar">
-
-                  <label for="email">E-mail<input type="email" name="email" placeholder="exemplo@email.com"
-                      class="email" id="email"></label>
-                  <label for="senha">Senha<input type="password" name="senha" class="senha" id="senha"></label>
-                  <label for="conf-senha">Confirmar Senha<input type="password" name="conf-senha" class="conf-senha"
-                      id="conf-senha"></label>
-
-                </div>
-                <!--separar-->
-              </div>
-              <!--col-->
-            </div>
-            <!--row-->
-
-
+            <!--col-->
           </div>
-          <!--container-->
-        </form>
-        <!--dados-pessoais-->
+          <!--row-->
+
+          <div class="row">
+            <div class="col">
+              <div class="separar2">
+                <label for="bairro">Bairro<input type="text" name="bairro" class="bairro" id="bairro"></label>
+                <label for="cidade">Cidade<input type="text" name="cidade" class="cidade" id="cidade"></label>
+                <label for="estado">Estado<input type="text" name="estado" class="estado" id="estado"></label>
+                <div id="mensagem" class="mensagem"></div>
+              </div>
+              <!--separar2-->
+            </div>
+            <!--col-->
+          </div>
+          <!--row-->
 
       </div>
-      <!--dados-->
+      <!--container-endereco-->
 
     </div>
-    <!--container-dados-->
+    <!--container-form-->
 
-    <div class="container-endereco">
+    <div class="container-cadastrar">
+      <div class="botao">
 
-      <form class="endereco">
 
-        <h3>Endereço</h3>
+        <button class="botao-cadastrar" id="botao-cadastrar">cadastrar</button>
+        <a href="../login/login.html">Já tem uma conta? Acesse aqui!</a>
 
-        <div class="row">
-          <div class="col">
-            <div class="separar2">
-
-              <label for="cep" class="cep"> CEP <input type="text" maxlength="8" name="cep" class="cep" id="cep"
-                  placeholder="00000-000"></label>
-              <label for="rua">Rua<input type="text" name="rua" class="rua" id="rua"></label>
-              <label for="numero">Número<input type="text" name="numero" class="numero" id="numero"></label>
-            </div>
-            <!--separar-->
-          </div>
-          <!--col-->
-        </div>
-        <!--row-->
-
-        <div class="row">
-          <div class="col">
-            <div class="separar2">
-              <label for="bairro">Bairro<input type="text" name="bairro" class="bairro" id="bairro"></label>
-              <label for="cidade">Cidade<input type="text" name="cidade" class="cidade" id="cidade"></label>
-              <label for="estado">Estado<input type="text" name="estado" class="estado" id="estado"></label>
-              <div id="mensagem" class="mensagem"></div>
-            </div>
-            <!--separar2-->
-          </div>
-          <!--col-->
-        </div>
-        <!--row-->
-
+      </div>
+      <!--botao-cadastrar-->
     </div>
-    <!--container-endereco-->
-
+    <!--container-cadastrar-->
   </div>
-  <!--container-form-->
-
-  <div class="container-cadastrar">
-    <div class="botao">
-
-
-      <button class="botao-cadastrar" id="botao-cadastrar">cadastrar</button>
-      <a href="../login/login.html">Já tem uma conta? Acesse aqui!</a>
-
-    </div>
-    <!--botao-cadastrar-->
-  </div>
-  <!--container-cadastrar-->
-</div>
   <footer class="rodape">
     <div class="container-icone">
       <div class="icone1"></div>

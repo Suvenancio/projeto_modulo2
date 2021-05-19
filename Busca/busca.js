@@ -2,7 +2,7 @@ $('#buscanav').click(function (event) {
 
     event.preventDefault()
 
-    
+
 
     let busca = $('#inputnav').val()
 

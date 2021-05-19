@@ -1,4 +1,4 @@
-$('#enviar').click( function (evento){
+$('#enviar').click(function (evento) {
 
     evento.preventDefault();
 
@@ -7,7 +7,7 @@ $('#enviar').click( function (evento){
     let fone = $('.fone').val()
     let mensagem = $('.mensagem').val()
 
-    if (email.indexOf("@") <= 0){
+    if (email.indexOf("@") <= 0) {
         $('.nome').css('border-color', 'unset');
         $('.fone').css('border-color', 'unset');
         $('.mensagem').css('border-color', 'unset');
@@ -15,7 +15,7 @@ $('#enviar').click( function (evento){
         $('.email').css('border-radius', '4px');
         $('.mensagemerro').html('Email inválido.').css('color', 'red');
     }
-    else if (nome === ""){
+    else if (nome === "") {
         $('.email').css('border-color', 'unset');
         $('.mensagem').css('border-color', 'unset');
         $('.fone').css('border-color', 'unset');
@@ -23,7 +23,7 @@ $('#enviar').click( function (evento){
         $('.nome').css('border-radius', '4px');
         $('.mensagemerro').html('Preencha todos os campos.').css('color', 'red');
     }
-    else if (fone === ""){
+    else if (fone === "") {
         $('.nome').css('border-color', 'unset');
         $('.email').css('border-color', 'unset');
         $('.mensagem').css('border-color', 'unset');
@@ -31,7 +31,7 @@ $('#enviar').click( function (evento){
         $('.fone').css('border-radius', '4px');
         $('.mensagemerro').html('Preencha todos os campos.').css('color', 'red');
     }
-    else if (mensagem === ""){
+    else if (mensagem === "") {
         $('.nome').css('border-color', 'unset');
         $('.fone').css('border-color', 'unset');
         $('.email').css('border-color', 'unset');
@@ -39,7 +39,7 @@ $('#enviar').click( function (evento){
         $('.mensagem').css('border-radius', '4px');
         $('.mensagemerro').html('Preencha todos os campos.').css('color', 'red');
     }
-    else{
+    else {
         $('.nome').css('border-color', 'unset');
         $('.fone').css('border-color', 'unset');
         $('.email').css('border-color', 'unset');
