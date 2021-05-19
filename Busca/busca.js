@@ -26,6 +26,9 @@ function buscaFilme(busca) {
         'success': function (results) {
             try {
 
+                $('.container-anuncio').addClass('invisivel')
+                $("#todosfilmes").removeClass('invisivel')
+
                 let filmes = results.Search;
 
 
@@ -56,6 +59,7 @@ function buscaFilme(busca) {
 
 let id = [];
 
+
 $('.filmes').click(function (event) {
 
     event.preventDefault()
@@ -81,7 +85,7 @@ function criarObjeto(infoFilmes) {
         'success': function (results) {
 
             $('#myModal').modal('show')
-            const filmes = new Filme(results)
+            let filmes = new Filme(results)
             filmes.mostrar()
         }
 
@@ -112,7 +116,7 @@ class Filme {
         $('.genero').text(this.genero)
         $('.duracao').text(this.duracao)
         $('.nota').text(this.nota)
-        $('.diretor').text(this.Plot)
+        $('.plot').text(this.Plot)
     }
 }
 

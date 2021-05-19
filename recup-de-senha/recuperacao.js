@@ -1,13 +1,13 @@
 $('#botao-recup').on('click', function (evento) {
+
+    evento.preventDefault();
+
     var email = $('#email').val();
 
-    if (email.indexOf("@") < 0) {
-        $('#email').css('border-color', 'red');
-        $('#email').css('border-radius', '4px');
+    if (email.indexOf("@") <= 0) {
         $('#mensagem').html('Email inválido.').css('color', 'red');
     }
     else {
-        $('#email').css('border-color', 'unset');
         $('#mensagem').html('Link enviado, confira sua caixa de entrada.').css('color', 'green');
     }
 });

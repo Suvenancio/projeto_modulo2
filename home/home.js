@@ -69,7 +69,7 @@ function buscaFilme(busca) {
                     $('.lancamento').text("erro")
                     $('.genero').text("erro")
                     $('.duracao').text("erro")
-                    $('.diretor').text("erro")
+                    $('.plot').text("erro")
                     $('.nota').text("erro")
                 }
 
@@ -138,6 +138,6 @@ class Filme {
         $('.genero').text(this.genero)
         $('.duracao').text(this.duracao)
         $('.nota').text(this.nota)
-        $('.diretor').text(this.Plot)
+        $('.plot').text(this.Plot)
     }
 }

@@ -1,6 +1,12 @@
 body{
     background-image: url(../img/bg1.jpg);
-    
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerglobal{
+    padding-bottom: 10rem;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     padding: 0%;
@@ -86,13 +92,15 @@ input{
 
 .rodape{
     width: 100%;
-    margin-top: 160px;
     height: 80px;
     background-color: rgb(49, 49, 49);
     color: black;
     text-align: center;
     font-family: monospace;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
 }
 
 @media screen and (max-width : 994px){

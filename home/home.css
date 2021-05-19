@@ -103,12 +103,20 @@
 .container{
    background-color: #1f1e1e86; 
    border-radius: 7px;
-    
 }
 section .col{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+}
+#filmes9{
+    margin-bottom: 80px;
+}
+#filmes10{
+    margin-bottom: 80px;
+}
+#filmes11{
+    margin-bottom: 80px;
 }
 .imagem{
     width: 300px;
