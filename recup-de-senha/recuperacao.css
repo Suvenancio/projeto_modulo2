@@ -1,6 +1,6 @@
 body{
     background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
+    
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     padding: 0%;
@@ -68,14 +68,14 @@ button{
     border-radius: 20px;
     color: whitesmoke;
 }
-.container-texto {
+.container-texto p{
     padding: 2% 0 0 0;
-    
+    font-size: 18px;
 }
 
 .rodape{
     width: 100%;
-    margin-top: 140px;
+    margin-top: 160px;
     height: 80px;
     background-color: rgb(49, 49, 49);
     color: black;
@@ -85,6 +85,25 @@ button{
 
 }
 
+@media screen and (max-width : 994px){
+    .navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+        color: rgb(230, 230, 230);
+        font-family: monospace;
+        font-size: 19px;
+        background-color: rgb(49, 49, 49);
+        height: 30px;
+        line-height: 8px; 
+        text-align: center;
+        
+    }
+    .form-control.me-2{
+        display: none;
+    }
+    .btn.btn-outline-success{
+        display: none;
+    }
+    
+}
 @media screen and (max-width: 620px){
 
     .titulo{

@@ -55,6 +55,18 @@
         </div>
       </nav>
 
+      <div class="container-anuncio">
+        <div class="anuncio">
+          <h3>
+            Olá, só aqui você encontra títulos inesquecíveis e que ainda irão surpreender você. Nós da ResiliaFlix temos
+            uma vasta lista de opções de filmes que vão te fazer rir, chorar e ficar com a cabeça balançada. Convide seus amigos 
+            e familiares para viver momentos inesquecíveis na tela da sua tv ou do seu smartphone.
+  
+            
+          </h3>
+        </div>
+      </div>
+
     <section id="todosfilmes" class="container">
         <div class="row">
             <div class="col">
@@ -86,23 +98,25 @@
     <div class="container-modal" id="container-modal">
         <div class="row">
             <div class="col-md-12">
-                <div class="modal fade" id="myModal">
+                <div class="modal fade show" id="myModal">
                     <!--a tela total por trás do modal-->
                     <div class="modal-dialog">
                         <div class="modal-content" id="modalContent">
                             <div class="modal-header">
                                 <!--espaço acima-->
-                                <h3>Título: <span class="nome"></span></h3>
+                                <h3> <span class="nome"></span></h3>
                             </div>
                             <div class="modal-body">
-                                <img class="foto" src="" alt="" />
+
+                                <div class="container-img"> <img class="foto" src="" alt="" /></div>
+
                                 <div class="modal-text">
                                     <p>Ano : <span class="ano"></span></p>
                                     <p>Data de Lançamento : <span class="lancamento"></span></p>
                                     <p>Duração : <span class="duracao"></span></p>
                                     <p>Gênero : <span class="genero"></span></p>
                                     <p>Metacritic : <span class="nota"></span></p>
-                                    <p>Resumo : <span class="diretor"></span></p>
+                                    <div class="resumo"><p>Sinopse  <br><span class="diretor"></span></p></div>
                                 </div>
                                 <!--modal-text-->
                             </div>
@@ -115,6 +129,8 @@
             </div>
         </div>
     </div>
+
+
 
     <footer class="rodape">
         <div class="container-icone">
