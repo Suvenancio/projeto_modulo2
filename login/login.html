@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css-reset/reset.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="containerglobal">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../contato/contato.html">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../cadastro/cadastro.html">Cadastrar</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="../Busca/busca.html">Busca Avançada</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="titulo">
+            <h1>Login</h1>
+        </div>
+
+        <div class="container-form">
+
+            <form class="login" id="login">
+
+                <div class="col">
+
+                    <label for="email">Usuário (Email)</label>
+                    <input type="text" name="email" class="email" id="email">
+
+
+
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" class="senha" id="senha">
+                    <div id="mensagem" class="mensagem"></div>
+
+                </div>
+                <!--col-->
+
+            </form>
+            <!--row-->
+
+        </div>
+        <!--container-->
+
+        <div class="container-entrar">
+
+            <div class="entrar">
+
+
+                <button class="botao-entrar" id="botao-entrar">Entrar</button>
+                <a href="../recup-de-senha/recuperacao.html">Esqueceu sua senha?</a>
+
+            </div>
+            <!--entrar-->
+        </div>
+        <!--entrar-->
+    </div>
+    <footer class="rodape">
+        <div class="container-icone">
+            <div class="icone"></div>
+            <div class="icone"></div>
+            <div class="icone"></div>
+        </div>
+
+        <div class="container-texto">
+            <p><img src="../img/original.png" alt=""> todos os direitos reservados - projeto final 02 resilia t5 </p>
+        </div>
+        <!--container-text-->
+
+    </footer>
+
+    <script src="../bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./login.js"></script>
+</body>
+
+</html>

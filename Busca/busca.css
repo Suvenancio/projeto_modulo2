@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url(../img/bg1.jpg);
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerglobal{
+    padding-bottom: 10rem;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    padding: 0%;
+}
+.container-fluid{
+    background-color: rgb(49, 49, 49);
+    height: 90px;
+    line-height: 0;
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+    color: rgb(230, 230, 230);
+    font-family: monospace;
+    font-size: 19px;
+    margin-left: 60px;       
+    
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a:hover{
+    color: rgb(255, 255, 255);
+}
+.form-control.me-2{
+    font-family: monospace;
+    
+}
+.btn.btn-outline-success{
+    background-color: rgba(12, 9, 9, 0.459);
+    border: none;
+    color: rgb(148, 148, 148);
+}
+.btn.btn-outline-success:hover{
+    color: whitesmoke;
+    background-color: #23b5b5;
+    border: none;
+}
+.btn.btn-outline-success :hover{
+    background-color: darkcyan;
+}
+.btnbusca{
+    border-radius: 6px;
+    border: none;
+    width: 90px;
+    background-color: rgba(32, 32, 32, 0.459);
+    color: rgb(182, 182, 182);
+    font-size: 14px;
+    margin-left: 10px;
+}
+#busca{
+    border-radius: 6px;
+    border: none;
+    width: 200px;
+
+}
+#todosfilmes{
+    text-align: center;
+}
+.imagem{
+    width: 200px;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 3%;
+    cursor: pointer;
+    transition: 0.6s;
+    border: 5px solid white;
+    box-shadow: 3px 3px 3px rgb(255, 255, 255)
+}
+#filmes7{
+    margin-bottom: 150px;
+}
+#filmes6{
+    margin-bottom: 150px;
+}
+#filmes5{
+    margin-bottom: 150px;
+}
+.imagem:hover{
+    transform: scale(1.1);
+}
+#erro{
+    background-color: rgba(32, 32, 32, 0.459);
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin-top:100px;
+}
+.invisivel{
+    display:none;
+}
+.escondida{
+    display:none;
+}
+.container{
+    margin-top:50px;
+    background-color: rgba(59, 59, 59, 0.288);
+    padding:50px;
+}
+.modal.fade.show{
+    width: 100%;
+    padding-right: 20%;
+    text-align: center;
+}
+#modalContent{
+    width: 150%;
+    margin-right: 600px;
+
+}
+.modal-header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #299797;
+}
+.modal-header h3{
+    width: 100%;
+    text-align: center;
+}
+.modal-body{
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(77, 77, 77);
+    
+}
+.container-img{
+    width: 50%;
+    border-right: 2px solid whitesmoke;
+}
+.modal-body img{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+}
+.modal-text{
+    padding-top: 8%;
+    margin-top: 45px;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 20px;
+    font-size: 19px;
+    font-family:sans-serif;
+    margin: 0 auto;
+}
+.modal-text p{
+    font-weight: bolder;
+    
+}
+.modal-text .ano, .lancamento, .duracao, .genero, .nota, .diretor{
+    font-weight: lighter;
+    letter-spacing: 5px;
+
+}
+.modal-text .resumo {
+    margin-top: 70px;
+}
+.modal-footer{
+    background-color:rgb(77, 77, 77) ;
+}
+.modal-footer > button{
+    margin: 0 auto;
+    width: 20%;
+    background-color: rgb(93, 91, 95);
+    border: none;
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: 22px;
+}
+.container-texto {
+    padding: 2% 0 0 0;
+}
+.container-anuncio{
+    width: 100%;
+    text-align: center;
+    margin-top:200px;
+}
+.container-anuncio .anuncio{
+    width: 60%;
+    background-color: #030303b2;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: monospace;
+    padding: 2%;
+}
+.rodape{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(49, 49, 49);
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+}
+@media screen and (max-width: 1200px){
+    .col{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .filmes{
+        margin-top:50px
+    }
+}
+@media screen and (max-width : 994px){
+    .navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+        color: rgb(230, 230, 230);
+        font-family: monospace;
+        font-size: 19px;
+        background-color: rgb(49, 49, 49);
+        height: 30spx;
+        line-height: 8px; 
+        text-align: center;
+        
+    }
+    .form-control.me-2{
+        display: none;
+    }
+    .btn.btn-outline-success{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
