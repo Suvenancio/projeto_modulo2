@@ -37,7 +37,7 @@ function buscaFilme(busca) {
 
 
 
-    let url = "http://www.omdbapi.com/?apikey=f5e93ab6&s="
+    let url = "https://www.omdbapi.com/?apikey=f5e93ab6&s="
 
 
 
@@ -90,7 +90,7 @@ function requisicao() {
 
 
         $.ajax({
-            'url': `http://www.omdbapi.com/?i=${id}&apikey=7ebfd47e`,
+            'url': `https://www.omdbapi.com/?i=${id}&apikey=7ebfd47e`,
 
             'success': function (result) {
 
@@ -104,7 +104,7 @@ function requisicao() {
 function criarObjeto(id) {
 
     $.ajax({
-        'url': `http://www.omdbapi.com/?i=${id}&apikey=7ebfd47e`,
+        'url': `https://www.omdbapi.com/?i=${id}&apikey=7ebfd47e`,
         'success': function (result) {
 
             $('#myModal').modal('show')
