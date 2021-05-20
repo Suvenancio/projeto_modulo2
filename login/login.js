@@ -3,11 +3,13 @@ $('#botao-entrar').on('click', function (evento) {
     let senha = $('#senha').val();
 
     if (email.indexOf("@") < 0) {
+        $('#senha').css('border-color', 'unset');
         $('#email').css('border-color', 'red');
         $('#email').css('border-radius', '4px');
         $('#mensagem').html('Email inválido.').css('color', 'red');
     }
     else if (senha === "") {
+        $('#email').css('border-color', 'unset');
         $('#senha').css('border-color', 'red');
         $('#senha').css('border-radius', '4px');
         $('#mensagem').html('Insira uma senha.').css('color', 'red');
@@ -17,7 +19,4 @@ $('#botao-entrar').on('click', function (evento) {
         $('#senha').css('border-color', 'unset');
         $('#mensagem').html('Login efetuado com sucesso.').css('color', 'green');
     }
-
-
-
 });

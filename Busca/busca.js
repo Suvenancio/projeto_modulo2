@@ -2,8 +2,6 @@ $('#buscanav').click(function (event) {
 
     event.preventDefault()
 
-
-
     let busca = $('#inputnav').val()
 
     buscaFilme(busca)
@@ -30,7 +28,8 @@ function buscaFilme(busca) {
                 $("#todosfilmes").removeClass('invisivel')
 
                 let filmes = results.Search;
-
+                console.log(filmes)
+                id = []
 
                 for (let i = 0; i < filmes.length; i++) {
 
@@ -57,8 +56,8 @@ function buscaFilme(busca) {
     })
 }
 
-let id = [];
-
+let id;
+console.log(id)
 
 $('.filmes').click(function (event) {
 

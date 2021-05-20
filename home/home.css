@@ -73,8 +73,7 @@
     width: 90%;
     background-size: contain;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
 .btn.btn-primary{
     width: 160px;
@@ -146,7 +145,6 @@ section .col{
 #modalContent{
     width: 150%;
     margin-right: 600px;
-
 }
 .modal-header{
     width: 100%;
@@ -172,8 +170,7 @@ section .col{
 }
 
 .modal-text {
-    padding-top: 4%;
-    
+    padding-top: 4%;  
     width: 50%;
     height: auto;
     border-radius: 10px;

@@ -49,6 +49,7 @@ body{
 .mensagemerro{
     padding:10px;
     text-align:center;
+    font-weight: bold;
 }
 .contatoexterna{
     border: 2px solid black;

@@ -18,11 +18,11 @@ $('#botao-cadastrar').on('click', function (evento) {
     if (email.indexOf("@") < 0) {
         $('#mensagem').html('Email inválido.').css('color', 'red');
     }
+    else if (senha !== conf) {
+        $('#mensagem').html('Informe uma senha.').css('color', 'red');
+    }
     else if (senha.length < 6) {
         $('#mensagem').html('A senha deve ter ao menos 6 digitos.').css('color', 'red');
-    }
-    else if (senha == false && conf == false) {
-        $('#mensagem').html('Informe uma senha.').css('color', 'red');
     }
     else if (nome.indexOf(" ") > 0) {
         $('#mensagem').html('Informe somente o primeiro nome.').css('color', 'red');
